@@ -26,24 +26,6 @@ class ControllerNC: UINavigationController, ControllerNCDelegate {
         configureSecondSlidingVC()
         configureNavigationVC()
     }
-
-    
-    func configureButtons(controllerNC: ControllerNC, viewControllers: [SlidingVC]) {
-        var topMargin: CGFloat = 100
-        for controller in viewControllers {
-            let button = NavigationButton()
-            button.configure(controllerNC: controllerNC, controllerBehind: controller)
-            view.addSubview(button)
-            button.translatesAutoresizingMaskIntoConstraints = false
-            button.topAnchor.constraint(equalTo: view.topAnchor, constant: topMargin).isActive = true
-            button.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-            button.widthAnchor.constraint(equalToConstant: 200).isActive = true
-            button.heightAnchor.constraint(equalToConstant: 60).isActive = true
-            button.backgroundColor = .blue
-            topMargin += 70
-        }
-        
-    }
     
     private func configureSlidingVC() {
         slidingVC = SlidingVC()
