@@ -12,6 +12,8 @@
 		7676A70222C8A7FA00EE08CF /* ControllerNC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7676A70122C8A7FA00EE08CF /* ControllerNC.swift */; };
 		7676A70422C8A91F00EE08CF /* SlidingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7676A70322C8A91F00EE08CF /* SlidingVC.swift */; };
 		7676A70822C8AC0100EE08CF /* NavigationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7676A70722C8AC0100EE08CF /* NavigationButton.swift */; };
+		7676A70A22C8C4E400EE08CF /* NavigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7676A70922C8C4E400EE08CF /* NavigationVC.swift */; };
+		7676A70F22C8C9A200EE08CF /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7676A70E22C8C9A200EE08CF /* Protocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		7676A70122C8A7FA00EE08CF /* ControllerNC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerNC.swift; sourceTree = "<group>"; };
 		7676A70322C8A91F00EE08CF /* SlidingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingVC.swift; sourceTree = "<group>"; };
 		7676A70722C8AC0100EE08CF /* NavigationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationButton.swift; sourceTree = "<group>"; };
+		7676A70922C8C4E400EE08CF /* NavigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationVC.swift; sourceTree = "<group>"; };
+		7676A70E22C8C9A200EE08CF /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		7676A6EB22C8A71400EE08CF /* navbarIV */ = {
 			isa = PBXGroup;
 			children = (
+				7676A70B22C8C94300EE08CF /* Protocols */,
 				7676A70022C8A79400EE08CF /* Model */,
 				7676A6FF22C8A79000EE08CF /* View */,
 				7676A6FE22C8A78400EE08CF /* Controller */,
@@ -70,6 +75,7 @@
 				7676A70122C8A7FA00EE08CF /* ControllerNC.swift */,
 				7676A70322C8A91F00EE08CF /* SlidingVC.swift */,
 				7676A70722C8AC0100EE08CF /* NavigationButton.swift */,
+				7676A70922C8C4E400EE08CF /* NavigationVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -86,6 +92,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7676A70B22C8C94300EE08CF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7676A70E22C8C9A200EE08CF /* Protocols.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,7 +174,9 @@
 				7676A70222C8A7FA00EE08CF /* ControllerNC.swift in Sources */,
 				7676A70422C8A91F00EE08CF /* SlidingVC.swift in Sources */,
 				7676A70822C8AC0100EE08CF /* NavigationButton.swift in Sources */,
+				7676A70F22C8C9A200EE08CF /* Protocols.swift in Sources */,
 				7676A6ED22C8A71400EE08CF /* AppDelegate.swift in Sources */,
+				7676A70A22C8C4E400EE08CF /* NavigationVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,24 +12,21 @@ class SlidingVC: UIViewController {
     
     var button: UIButton!
     var name: String!
-    var slided: Bool!
     var slidingConst: CGFloat!
+    var controllerNC: ControllerNC!
+    
+    var delegate: ControllerNCDelegate!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .red
-        slided = false
         slidingConst = view.frame.size.width * 0.7
         configureButton()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        print("Appearing")
-    }
-    
-    func configure(name: String) {
+    func configure(name: String, controllerNC: ControllerNC) {
         self.name = name
+        self.delegate = controllerNC
     }
     
     func configureButton() {
@@ -45,10 +42,7 @@ class SlidingVC: UIViewController {
     }
 
     @objc func slide() {
-        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0, options: .curveEaseInOut, animations: {
-            self.view.frame.origin.x = self.view.frame.origin.x + (self.slided ? -self.slidingConst : self.slidingConst)
-        }, completion: nil)
-        slided = !slided
+        delegate.dismissVC()
     }
 
 }
